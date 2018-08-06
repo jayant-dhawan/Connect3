@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/connect_3"
+        android:textAppearance="@android:style/TextAppearance.Material.Title"
+        android:textSize="55sp"
+        app:fontFamily="@font/amatic_sc_bold" />
+
+    <ImageView
+        android:id="@+id/grid"
+        android:layout_width="360dp"
+        android:layout_height="360dp"
+        android:layout_centerInParent="true"
+        android:contentDescription="@string/grid_layout"
+        app:srcCompat="@drawable/grid" />
+
+    <android.support.v7.widget.GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="358dp"
+        android:layout_height="360dp"
+        android:layout_centerInParent="true"
+        app:columnCount="3"
+        app:rowCount="3">
+
+        <ImageView
+            android:id="@+id/imageView0"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:contentDescription="@string/goti_1"
+            android:onClick="dropIn"
+            android:padding="5dp"
+            android:tag="0"
+            app:layout_column="0"
+            app:layout_row="0" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:contentDescription="@string/goti_1"
+            android:onClick="dropIn"
+            android:padding="5dp"
+            android:tag="1"
+            app:layout_column="1"
+            app:layout_row="0" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:contentDescription="@string/goti_1"
+            android:onClick="dropIn"
+            android:padding="5dp"
+            android:tag="2"
+            app:layout_column="2"
+            app:layout_row="0" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:contentDescription="@string/goti_1"
+            android:onClick="dropIn"
+            android:padding="5dp"
+            android:tag="3"
+            app:layout_column="0"
+            app:layout_row="1" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:contentDescription="@string/goti_1"
+            android:onClick="dropIn"
+            android:padding="5dp"
+            android:tag="4"
+            app:layout_column="1"
+            app:layout_row="1" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:contentDescription="@string/goti_1"
+            android:onClick="dropIn"
+            android:padding="5dp"
+            android:tag="5"
+            app:layout_column="2"
+            app:layout_row="1" />
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:contentDescription="@string/goti_1"
+            android:onClick="dropIn"
+            android:padding="5dp"
+            android:tag="6"
+            app:layout_column="0"
+            app:layout_row="2" />
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:contentDescription="@string/goti_1"
+            android:onClick="dropIn"
+            android:padding="5dp"
+            android:tag="7"
+            app:layout_column="1"
+            app:layout_row="2" />
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:contentDescription="@string/goti_1"
+            android:onClick="dropIn"
+            android:padding="5dp"
+            android:tag="8"
+            app:layout_column="2"
+            app:layout_row="2" />
+
+    </android.support.v7.widget.GridLayout>
+
+    <LinearLayout
+        android:id="@+id/WinnerMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="#fb2f75"
+        android:orientation="vertical"
+        android:theme="@android:style/TextAppearance.Holo.Widget.PopupMenu"
+        android:visibility="invisible">
+
+        <TextView
+            android:id="@+id/winnerMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="35sp" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="playAgain"
+            android:text="@string/play_again"
+            android:textAppearance="@android:style/TextAppearance.Widget.Button" />
+    </LinearLayout>
+
+</RelativeLayout>
